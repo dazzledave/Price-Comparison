@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Price Comparison Result</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #52535c;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            color: #666;
+            line-height: 1.6;
+        }
+
+        /* Add more CSS styles here as needed */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Objects Identified:</h1>
+        {% for result in results %}
+            <p>{{ result }}</p>
+        {% endfor %}
+    </div>
+</body>
+</html>
